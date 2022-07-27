@@ -26,14 +26,18 @@
       </el-col>
       <el-col :xs="24" :sm="24" :md="7" :lg="7" :xl="7" style="padding-left:10px">
         <div>
+          
           <dt style="padding-left:46px;padding-right: 10px;">
             <p style="float:left;font-size: 15px;margin-bottom:0px;margin-top:15px;">publications</p>
-            <p style="float:right;margin-bottom:2px;margin-top: 20px;" class="more" @click="morei()">more</p>
+            <p style="float:right;margin-bottom:2px;margin-top: 18px;" class="more" @click="morei()">more</p>
           </dt>
+          
           <ul class="right">
+            <el-row>
               <li v-for="(item,i) in list" :key="i" class="infinite-list-item">
                   <a style="float:left;width:190px;padding-top: 10px;"><img :src="getImg(i)" @click="morei()" style="width:80%;display:inline"></a>
               </li>
+            </el-row>
           </ul>
         </div>
       </el-col>
@@ -46,7 +50,7 @@ list-style-type:none;
 padding-top: 45px;
 }
 .right{
-  padding-top: 10px;
+  padding-top: 50px;
 list-style-type:none;
 }
 .left>li{

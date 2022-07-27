@@ -8,7 +8,7 @@
     <div>
         <el-row >
           <el-col :xs="24" :sm="24" :md="2" :lg="2" :xl="1"><div class="grid-content bg-purple"/></el-col>
-          <el-col :xs="24" :sm="24" :md="5" :lg="5" :xl="6"><el-affix :offset="130"><Aside></Aside></el-affix></el-col>
+          <el-col :xs="24" :sm="24" :md="5" :lg="5" :xl="6"><Aside></Aside></el-col>
           <el-col :xs="24" :sm="24" :md="15" :lg="15" :xl="16" ><router-view style="flex:1"/></el-col>
           <el-col :xs="24" :sm="24" :md="2" :lg="2" :xl="1"><div class="grid-content bg-purple-light"/></el-col>
         </el-row>
